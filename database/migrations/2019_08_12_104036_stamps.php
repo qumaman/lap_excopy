@@ -15,7 +15,7 @@ class Stamps extends Migration
     {
         Schema::create('stamps', function (Blueprint $table) {
             $table->increments('id');
-            $table->increments('article');
+            $table->string('article');
             $table->integer('subcategory_id');
             $table->string('title');
             $table->string('description');

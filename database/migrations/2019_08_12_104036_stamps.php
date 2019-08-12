@@ -19,8 +19,8 @@ class Stamps extends Migration
             $table->integer('subcategory_id');
             $table->string('title');
             $table->string('description');
-            $table->string('cost');
-            $table->string('count');
+            $table->integer('cost');
+            $table->integer('count');
             $table->timestamps();
         });
     }
